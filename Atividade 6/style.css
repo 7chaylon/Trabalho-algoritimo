@@ -39,9 +39,24 @@ body {
   background-color: #0080c1;
   color: white;
 }
+.atividade4 {
+  margin: 20px;
+}
+.atividade5 {
+  margin: 20px;
+}
+.atividade1 {
+  margin: 20px;
+}
+.atividade2 {
+  margin: 20px;
+}
+.atividade3 {
+  margin: 20px;
+}
 .nav {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -50,38 +65,36 @@ body {
   gap: 20px;
   display: flex;
   justify-content: center;
-  color: #fff;
   font-size: 14px;
-  background-color: #007bff;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: 0.5s;
 }
-.aprender-crescer:hover {
+.atividade5:hover {
   background-color: #0080c1;
   color: white;
 }
-.imprensa:hover {
+.atividade4:hover {
   background-color: #0080c1;
   color: white;
 }
-.incubadora:hover {
+.atividade1:hover {
   background-color: #0080c1;
   color: white;
 }
-.inclusao:hover {
+
+.atividade2:hover {
   background-color: #0080c1;
   color: white;
 }
-.portal:hover {
+
+.atividade3:hover {
   background-color: #0080c1;
   color: white;
 }
-.maker:hover {
-  background-color: #0080c1;
+a:link {
+  text-decoration: none;
   color: white;
-}
-.sudotec:hover {
-  background-color: #0080c1;
-  color: white;
+  background-color: #007bff;
+  transition: 0.5s;
 }
