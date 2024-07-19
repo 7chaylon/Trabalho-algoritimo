@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 3 - carrossel</title>
+ 
+    <style>
+        button {
+            position: absolute;
+        }
+ 
+        .esquerda {
+            top: 250px;
+            left: 32px;
+        }
+ 
+        .direita {
+            top: 250px;
+            left: 500px;
+        }
+ 
+        img {
+            width: 600px;
+            height: 500px;
+        }
+    </style>
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ 
+    <script>
+        const imgs = [
+            `https://sudotec.org.br/upload/projetos/p_89.jpg?202407152149`,
+            `https://sudotec.org.br/upload/projetos/p_92.jpg?202407152149`,
+            'https://sudotec.org.br/upload/projetos/p_85.jpg?202407172130',
+            'http://sudotec.org.br/upload/projetos/p_89.jpg?202407172149',
+            'http://sudotec.org.br/upload/projetos/p_88.jpg?202407172149',
+            'http://sudotec.org.br/upload/projetos/p_90.jpg?202407172149'
+        ]
+ 
+        let indexCarrossel = 0
+ 
+        function voltaImagem() {
+            let imgCarrossel = document.getElementById(`imagem-carrossel`)
+ 
+            indexCarrossel--
+ 
+            if (indexCarrossel < 0) indexCarrossel = imgs.length - 1
+ 
+            imgCarrossel.setAttribute(`src`, imgs[indexCarrossel])
+        }
+ 
+        function avancaImagem() {
+            let imgCarrossel = document.getElementById(`imagem-carrossel`)
+ 
+            indexCarrossel++
+ 
+            if (indexCarrossel > imgs.length - 1) indexCarrossel = 0
+ 
+            imgCarrossel.setAttribute(`src`, imgs[indexCarrossel])
+        }
+ 
+        setInterval(() => {
+            avancaImagem()
+        }, 3000)
+    </script>
+</head>
+<body>
+    <div>
+        <button type="button" class="esquerda" onclick="voltaImagem()" onmouseover="avancaImagem()">
+            <span class="material-symbols-outlined">
+                chevron_left
+            </span>
+        </button>
+        <button type="button" class="direita" onclick="avancaImagem()" onmouseover="avancaImagem()">
+            <span class="material-symbols-outlined">
+                chevron_right
+            </span>
+        </button>
+        <img id="imagem-carrossel" src="https://sudotec.org.br/upload/projetos/p_92.jpg?202407152149" alt="imagem atual do carrossel">
+    </div>
+</body>
+</html>
+ 
