@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.infos {
+  gap: 10px;
+  display: flex;
+}
+.imagem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 200px;
+}
+.imagem img {
+  height: 80px;
+}
+.contato {
+  font-size: 14px;
+  color: #d1d1d1;
+  padding: 15px 20px 0px 20px;
+  white-space: nowrap;
+}
+.area-restrita {
+  font-weight: bold;
+  border: 1px solid #0080c1;
+  background: #fff;
+  color: #0080c1;
+  padding: 1px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 12px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.area-restrita:hover {
+  background-color: #0080c1;
+  color: white;
+}
+.nav {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.nav {
+  background-color: #007bff;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.aprender-crescer:hover {
+  background-color: #0080c1;
+  color: white;
+}
+.imprensa:hover {
+  background-color: #0080c1;
+  color: white;
+}
+.incubadora:hover {
+  background-color: #0080c1;
+  color: white;
+}
+.inclusao:hover {
+  background-color: #0080c1;
+  color: white;
+}
+.portal:hover {
+  background-color: #0080c1;
+  color: white;
+}
+.maker:hover {
+  background-color: #0080c1;
+  color: white;
+}
+.sudotec:hover {
+  background-color: #0080c1;
+  color: white;
+}
