@@ -1,0 +1,135 @@
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: 4px;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-3 {
+  gap: 12px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.infos {
+  gap: 10px;
+  display: flex;
+}
+
+.imagem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 200px;
+}
+
+.imagem img {
+  height: 80px;
+}
+
+.contato {
+  font-size: 14px;
+  color: #d1d1d1;
+  padding: 15px 20px 0px 20px;
+  white-space: nowrap;
+}
+
+.area-restrita {
+  font-weight: bold;
+  border: 1px solid #0080c1;
+  background: #fff;
+  color: #0080c1;
+  padding: 1px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 12px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.area-restrita:hover {
+  background-color: #0080c1;
+  color: white;
+}
+
+.atividade1,
+.atividade2,
+.atividade3,
+.atividade4,
+.atividade5 {
+  margin: 20px;
+}
+
+.nav {
+  background-color: #007bff;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+}
+
+.carrossel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.carrossel-conteudo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.voltar {
+  margin: 5px;
+}
+.voltar,
+.avancar {
+  background-color: #007bff;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#imagem-carrossel {
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 100%;
+}

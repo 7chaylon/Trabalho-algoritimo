@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./atividade4.js"></script>
+    <title>Carrossel com imagem e texto</title>
+  </head>
+  <body class="flex gap-4">
+    <div class="imagem">
+      <img src="https://sudotec.org.br/imgs/logomarca.png" alt="SUDOTEC Logo" />
+      <div class="infos">
+        <div class="contato">(46) 3536-6281</div>
+        <div class="area-restrita">
+          <p>ÁREA RESTRITA</p>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="atividade1">
+        <a href="../Atividade 1/cursos.html">ATIVIDADE 1</a>
+      </div>
+      <div class="atividade2">
+        <a href="../Atividade 2/noticias.html">ATIVIDADE 2</a>
+      </div>
+      <div class="atividade3">
+        <a href="../Atividade 3/carrosel.html">ATIVIDADE 3</a>
+      </div>
+      <div class="atividade4">
+        <a>ATIVIDADE 4</a>
+      </div>
+      <div class="atividade5">
+        <a href="../Atividade 5/maker.html">ATIVIDADE 5</a>
+      </div>
+    </div>
+    <div class="carrossel">
+      <button type="button" class="voltar" onclick="voltarCarrossel()">
+        Voltar
+      </button>
+      <div class="carrossel-conteudo">
+        <img
+          id="imagem-carrossel"
+          src="https://sudotec.org.br/upload/aprendercrescerdepoimentos/dest_1.jpg"
+          alt="imagem do carrossel"
+        />
+        <div>
+          <p id="carrossel-depoimento">
+            O projeto Aprender e Crescer foi um dos marcos do meu início de
+            carreira na área de tecnologia e programação, caí de para-quedas,
+            com o envio da inscrição de um amigo. Trabalhava no RH de uma
+            empresa na qual pedi transferência para o setor do T.
+          </p>
+          <b id="imagem-carrosel">- GABRIELA FARIAS - AC - 2016</b>
+        </div>
+      </div>
+      <button type="button" class="avancar" onclick="avancarCarrossel()">
+        Avançar
+      </button>
+    </div>
+  </body>
+</html>
