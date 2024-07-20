@@ -1,81 +1,197 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>"MakerSpace"</title>
     <style>
-        body {
-            background-color: rgba(0, 0, 0, 0.851);
-            background-image: url(https://sudotec.org.br/imgs/fundo-section-maker-space.png);
-            background-size: cover;
-            background-blend-mode: multiply;
-            font-family: Arial, sans-serif;
-            color: white;
-            padding: 30px;
-            text-align: left;
-            margin: 30px;
-        }
-        h1 {
-            font-size: 60px;
-            color: yellow;
-            line-height: 45px;
-            margin-bottom: 15px;
-            padding-top: 50px;
-        }
-        p {
-            font-size: 30px;
-            color: white;
-            text-align: left;
-        }
-        .square {
-            width: 200px;
-            height: 50px;
-            border: 2px solid orange;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: border-color 0.3s ease;
-        }
- 
-        .square:hover {
-            border-color: #ffffff;
-        }
- 
-        .button {
-            padding: 10px 20px;
-            font-size: 20px;
-            color: orange;
-            text-align: center;
-            text-decoration: none;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
- 
-        .square:hover .button {
-            color: #ffffff;
-        }
+      .infos {
+        gap: 10px;
+        display: flex;
+      }
+      .imagem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 200px;
+      }
+      .imagem img {
+        height: 80px;
+      }
+      .contato {
+        font-size: 14px;
+        color: #d1d1d1;
+        padding: 15px 20px 0px 20px;
+        white-space: nowrap;
+      }
+      .area-restrita {
+        font-weight: bold;
+        border: 1px solid #0080c1;
+        background: #fff;
+        color: #0080c1;
+        padding: 1px 15px;
+        border-radius: 5px;
+        transition: 0.5s;
+        font-size: 12px;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+      .area-restrita:hover {
+        background-color: #0080c1;
+        color: white;
+      }
+      .atividade4 {
+        margin: 20px;
+      }
+      .atividade5 {
+        margin: 20px;
+      }
+      .atividade1 {
+        margin: 20px;
+      }
+      .atividade2 {
+        margin: 20px;
+      }
+      .atividade3 {
+        margin: 20px;
+      }
+
+      .nav {
+        background-color: #007bff;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        color: white;
+      }
+
+      .cabeçalho a:link {
+        text-decoration: none;
+        color: white;
+        background-color: #007bff;
+        transition: 0.5s;
+      }
+      .cabeçalho a:visited {
+        color: white;
+      }
+
+      body {
+        background-color: rgba(0, 0, 0, 0.851);
+        background-image: url(https://sudotec.org.br/imgs/fundo-section-maker-space.png);
+        background-size: cover;
+        background-blend-mode: multiply;
+        font-family: Arial, sans-serif;
+        color: white;
+        padding: 0px;
+        text-align: left;
+        margin: 0px;
+      }
+
+      .texto-maior {
+        font-size: 30px;
+        color: yellow;
+        margin-bottom: 15px;
+        line-height: 45px;
+        padding-top: 50px;
+        padding: 50px 50px 10px 50px;
+      }
+      .texto-menor {
+        padding: 0px 50px 40px 50px;
+      }
+      .h1 {
+        margin: 0;
+      }
+      .atv5 p {
+        font-size: 30px;
+        color: white;
+        text-align: left;
+      }
+      .square {
+        width: 200px;
+        height: 50px;
+        border: 2px solid orange;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: border-color 0.3s ease;
+        margin: 0px 50px 40px 50px;
+      }
+
+      .square:hover {
+        border-color: #ffffff;
+      }
+
+      .button {
+        padding: 10px 20px;
+        font-size: 20px;
+        color: orange;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      .square:hover .button {
+        color: #ffffff;
+      }
     </style>
-</head>
-<body>
-    <div class="texto-maior">
-    <h1>MAKER<br>SPACE</h1>
-</div>
-<div class="texto-menor">
-    <p>O “Espaço do Fazer” é uma tendência mundial e visa<br>
-       estimular os participantes ao compartilhamento dos<br>
-       equipamentos, do espaço, das ideias e o despertar a<br>
-       par...</p>
+  </head>
+  <body>
+    <div class="cabeçalho">
+      <div class="imagem">
+        <img
+          src="https://sudotec.org.br/imgs/logomarca.png"
+          alt="SUDOTEC Logo"
+        />
+        <div class="infos">
+          <div class="contato">(46) 3536-6281</div>
+          <div class="area-restrita">
+            <p>ÁREA RESTRITA</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="atividade1">
+          <a href="../Atividade 1/cursos.html ">ATIVIDADE 1</a>
+        </div>
+        <div class="atividade2">
+          <a href="../Atividade 2/noticias.html">ATIVIDADE 2</a>
+        </div>
+        <div class="atividade3">
+          <a href="../Atividade 3/carrosel.html">ATIVIDADE 3</a>
+        </div>
+        <div class="atividade4">
+          <a href="../atividade 4/carroselTexto.html">ATIVIDADE 4</a>
+        </div>
+        <div class="atividade5">
+          <a href="../Atividade 5/maker.html">ATIVIDADE 5</a>
+        </div>
+      </div>
     </div>
-    <div class="square">
+    <div class="atv 5">
+      <div class="texto-maior">
+        <h1 class="h1">
+          MAKER <br />
+          SPACE
+        </h1>
+      </div>
+      <div class="texto-menor">
+        <p>
+          O “Espaço do Fazer” é uma tendência mundial e visa<br />
+          estimular os participantes ao compartilhamento dos<br />
+          equipamentos, do espaço, das ideias e o despertar a<br />
+          par...
+        </p>
+      </div>
+      <div class="square">
         <a href="https://sudotec.org.br/makerspace">
-        <button class="button">SAIBA MAIS</button>
+          <button class="button">SAIBA MAIS</button>
         </a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
- 
