@@ -116,39 +116,25 @@
   </style>
   <script>
     const imgs = [
-      `https://sudotec.org.br/upload/projetos/p_89.jpg?202407152149`,
-      `https://sudotec.org.br/upload/projetos/p_92.jpg?202407152149`,
-      'https://sudotec.org.br/upload/projetos/p_85.jpg?202407172130',
-      'http://sudotec.org.br/upload/projetos/p_89.jpg?202407172149',
-      'http://sudotec.org.br/upload/projetos/p_88.jpg?202407172149',
-      'http://sudotec.org.br/upload/projetos/p_90.jpg?202407172149',
+      'https://sudotec.org.br/upload/projetos/p_88.jpg?202407162253',
+      'https://sudotec.org.br/upload/projetos/p_90.jpg?202407171613',
+      'https://sudotec.org.br/upload/projetos/p_89.jpg?202407171613',
+      'https://sudotec.org.br/upload/projetos/p_91.jpg?202407171613',
+      'https://sudotec.org.br/upload/projetos/p_93.jpg?202407171613',
+      'https://sudotec.org.br/upload/projetos/p_92.jpg?202407171613',
     ]
 
-    let indexCarrossel = 0
+    let currentIndex = 0
 
     function voltaImagem() {
-      let imgCarrossel = document.getElementById(`imagem-carrossel`)
-
-      indexCarrossel--
-
-      if (indexCarrossel < 0) indexCarrossel = imgs.length - 1
-
-      imgCarrossel.setAttribute(`src`, imgs[indexCarrossel])
+      currentIndex = (currentIndex - 1 + imgs.length) % imgs.length
+      document.getElementById('imagem-carrossel').src = imgs[currentIndex]
     }
 
     function avancaImagem() {
-      let imgCarrossel = document.getElementById(`imagem-carrossel`)
-
-      indexCarrossel++
-
-      if (indexCarrossel > imgs.length - 1) indexCarrossel = 0
-
-      imgCarrossel.setAttribute(`src`, imgs[indexCarrossel])
+      currentIndex = (currentIndex + 1) % imgs.length
+      document.getElementById('imagem-carrossel').src = imgs[currentIndex]
     }
-
-    setInterval(() => {
-      avancaImagem()
-    }, 3000)
   </script>
   <body>
     <div>

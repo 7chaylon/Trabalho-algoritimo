@@ -105,7 +105,7 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   padding: 20px;
 }
 
@@ -115,21 +115,24 @@ a:visited {
   align-items: center;
 }
 .voltar {
-  margin: 5px;
+  margin: 10px;
 }
 .voltar,
 .avancar {
   background-color: #007bff;
   color: white;
-
   border: none;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   cursor: pointer;
 }
 #imagem-carrossel {
   width: 150px;
   height: 150px;
-  border: none;
-  border-radius: 100%;
+  border-radius: 50%;
+  border-width: 8px;
+  border-color: rgb(175, 175, 175);
+  border-style: solid;
+  object-fit: cover;
+  margin-right: 16px;
 }
