@@ -115,7 +115,7 @@
     }
   </style>
   <script>
-    const imagens = [
+    const imgs = [
       'https://sudotec.org.br/upload/projetos/p_88.jpg?202407162253',
       'https://sudotec.org.br/upload/projetos/p_90.jpg?202407171613',
       'https://sudotec.org.br/upload/projetos/p_89.jpg?202407171613',
@@ -123,15 +123,17 @@
       'https://sudotec.org.br/upload/projetos/p_93.jpg?202407171613',
       'https://sudotec.org.br/upload/projetos/p_92.jpg?202407171613',
     ]
-    let i = 0
+
+    let currentIndex = 0
+
+    function voltaImagem() {
+      currentIndex = (currentIndex - 1 + imgs.length) % imgs.length
+      document.getElementById('imagem-carrossel').src = imgs[currentIndex]
+    }
 
     function avancaImagem() {
-      i = (i + 1) % imagens.length
-      document.getElementsByClassName('imagem')[0].src = imagens[i]
-    }
-    function voltaImagem() {
-      i = (i - 1 + imagens.length) % imagens.length
-      document.getElementsByClassName('imagem')[0].src = imagens[i]
+      currentIndex = (currentIndex + 1) % imgs.length
+      document.getElementById('imagem-carrossel').src = imgs[currentIndex]
     }
   </script>
   <body>
